@@ -1,13 +1,36 @@
+*{
+  box-sizing: border-box;
+}
 
+.container{
+  width: 960px;
+}
 
 body {
   font-size: 10px;
-  font-family: Roboto;
+  line-height: 21px;  
+  font-family: 'Roboto', sans-serif;
 }
 
-nav{
-  height: 40px;
-  background-color: #fdc84e;
+ul{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: #a8a8a9;
+}
+
+a:hover{
+  color: #e2e2e3;
+}
+
+
+.header-bottom nav{
+  padding-left: 3rem;
+  background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
+  background-image: url(../images/navbg.png);
+  background-repeat: no-repeat;
 }
 
 .header-top,
@@ -37,14 +60,30 @@ nav{
   background-color: #505357;
 }
 
+.langtoggle{
+  background-image: url(../images/engbg2.png);
+  background-repeat: no-repeat;
+  background-position: right;
+
+}
+
 .soclink,
 .mailto,
-.language{
-  height: 30px;
+.language,
+.soclink{
   font-size: 1.1rem;
   font-weight: 400;
   color: #a8a8a9;
+  text-decoration: none;
 }
+
+.soclink{
+  margin: 0 -15px 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
 
 .soclink li{
   margin-right: 0; 
@@ -55,13 +94,63 @@ nav{
   border-left: 1px solid #a8a8a9;
 }
 
+.phone{
+  display: flex;
+  justify-content: flex-end;
+  color: #45484a;
+  font-weight: 500;
+}
+
+.header-center .phone .contact_phone{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.phone .fa{
+  font-size: 2rem;
+}
 
 .naigation{
-  height: 100%;
+  padding: 1rem 0;
+}
 
+.phone li{
+  border-right: 1px solid #ddd;
+}
+
+.phone li:last-child{
+  border-right: 1px solid transparent;
+  padding-right: 0;
+}
+
+.logo,
+.phone{
+  padding: .6rem 0;
+}
+
+.logo{
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo a{
+  display: block;
+  height: 100%;
 }
 
 
+.naigation a,
+.naigation a:hover{
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #a95307;
+}
+
+.phone .fa,
+.icon{
+  margin-right: .7rem;
+}
 
 
 

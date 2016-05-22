@@ -5,11 +5,51 @@
 .container{
   width: 960px;
 }
+/* font-family: "RobotoRegular"; */
+@font-face{
+  font-family: "RobotoRegular";
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+    src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+    url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoLight"; */
+@font-face {
+    font-family: "RobotoLight";
+    src: url("../fonts/RobotoLight/RobotoLight.eot");
+    src: url("../fonts/RobotoLight/RobotoLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoLight/RobotoLight.woff") format("woff"),
+    url("../fonts/RobotoLight/RobotoLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoMedium"; */
+@font-face {
+    font-family: "RobotoMedium";
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot");
+    src: url("../fonts/RobotoMedium/RobotoMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoMedium/RobotoMedium.woff") format("woff"),
+    url("../fonts/RobotoMedium/RobotoMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "RobotoBold"; */
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../fonts/RobotoBold/RobotoBold.eot");
+    src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/RobotoBold/RobotoBold.woff") format("woff"),
+    url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
 
 body {
   font-size: 10px;
-  line-height: 21px;  
-  font-family: 'Roboto', sans-serif;
+  line-height: 2.8rem;  
+  font-family: "RobotoRegular", sans-serif;
 }
 
 ul{
@@ -20,6 +60,10 @@ ul{
 a{
   color: #a8a8a9;
 }
+  
+p{
+  font-size: 1.9rem;
+}
 
 .attention{
   color: #fead2d;
@@ -29,6 +73,9 @@ a:hover{
   color: #e2e2e3;
 }
 
+.block-flex{
+  display: flex;
+}
 
 .header-bottom nav{
   padding-left: 3rem;
@@ -85,7 +132,6 @@ a:hover{
 .soclink{
   margin: 0 -15px 0 0;
   padding: 0;
-  display: flex;
   justify-content: flex-end;
 }
 
@@ -134,7 +180,6 @@ a:hover{
 }
 
 .logo{
-  display: flex;
   justify-content: flex-start;
 }
 
@@ -153,8 +198,8 @@ a:hover{
   text-decoration: none;
 }
 
-.phone .fa,
-.icon{
+header .phone .fa,
+header .icon{
   margin-right: .7rem;
 }
 
@@ -163,11 +208,154 @@ a:hover{
 }
 
 .logo-info{
-  display: flex;
   justify-content: space-between;
 }
 
 
+.main{
+  background-image: url(../images/mainbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+}
 
 
+.main article{
+  flex-direction: column;
+  align-items: center;
+  padding: 9rem 13.5rem 12.3rem 13.5rem;
+}
+
+.tour-info article{
+  align-items: center;
+}
+
+
+.main h1{
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+
+.main h3{
+  font-weight: 500;
+}
+
+.main h3,
+.main p{
+  text-shadow: 1px 2.8px 6.7px rgba(29, 25, 25, 0.79);
+}
+
+.main p{
+  font-size: 2.2rem;
+  padding-bottom: 4rem;
+  font-family: "RobotoRegular";
+  font-weight: lighter;
+}
+
+
+/*------------styles for button---------------*/
+
+.btn-prime{
+  padding: 1.5rem 4.5rem;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #ff862c;
+  border: 2px solid #ebecf3;
+  box-shadow: inset 0 0 0 3px #ff862c,
+              inset 0 0 0 4px #f4bc96; 
+  font-size: 1.9rem;
+  font-weight: 400;
+  text-align: center;
+  margin: auto;
+}
+
+/*--------------------------------------------*/
+
+.circle{
+  width: 7.8rem;
+  height: 7.8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.red{
+  background-color: #dd292b;
+}
+
+.overlie{
+  border: 1px solid #ffae61;
+  background-color: #ffffff;
+  position: relative;
+  top: 5.5rem;
+}
+
+.cercle img{
+  align-self: center;
+}
+
+.tour-info article{
+  padding-top: 5rem;
+}
+
+.tour_detail{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 6rem;
+  font-family: "RobotoRegular";
+}
+
+.theme,
+.date,
+.places{
+  width: 30.5rem;
+  min-height: 16rem;
+  padding: 1.5rem .5rem 0 2rem;
+  background-image: url(../images/tour_info_item_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid rgba(183, 216, 237, 0.81);
+}
+
+.theme p,
+.date p,
+.places p{
+  font-size: 1.3rem;
+}
+
+.theme h4::before,
+.date h4::before,
+.places h4::before{
+  content: '';
+  background-color: #f8c142;
+  border-radius: 50%;
+  padding:  0.5rem 1.8rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 1rem;
+}
+
+.theme h4::before{
+  background-image: url(../images/icons/tour_info/questionicon.png);
+}
+
+.date h4::before{
+  background-image: url(../images/icons/tour_info/location.png);
+}
+
+.places h4::before{
+  background-image: url(../images/icons/tour_info/building.png);
+}
+
+
+.tour-info button{
+  margin-bottom: 5rem;
+}
+
+hr{
+  margin-bottom: 5rem;
+}
 

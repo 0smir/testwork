@@ -1,10 +1,5 @@
-*{
-  box-sizing: border-box;
-}
+/*------global------*/
 
-.container{
-  width: 960px;
-}
 /* font-family: "RobotoRegular"; */
 @font-face{
   font-family: "RobotoRegular";
@@ -46,10 +41,19 @@
     font-weight: normal;
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-size: 10px;
   line-height: 2.8rem;  
   font-family: "RobotoRegular", sans-serif;
+}
+
+.container{
+  width: 960px;
 }
 
 ul{
@@ -60,8 +64,12 @@ ul{
 a{
   color: #a8a8a9;
 }
+a:hover{
+  color: #e2e2e3;
+}
   
-p{
+h2 + p,
+.reviews > p{
   font-size: 1.9rem;
 }
 
@@ -69,21 +77,90 @@ p{
   color: #fead2d;
 }
 
-a:hover{
-  color: #e2e2e3;
+.container{
+  border: 1px solid yellow;
 }
 
-.block-flex{
-  display: flex;
+/*------------styles for button---------------*/
+
+.btn-prime{
+  display: block;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 auto;
 }
 
-.header-bottom nav{
-  padding-left: 3rem;
-  background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
-  background-image: url(../images/navbg.png);
-  background-size: cover;
+.registration,
+.comment {
+  padding: 1.5rem 4.5rem;
+  font-size: 1.9rem;
+  border-radius: 3px;
+  color: #ffffff;
+  background-color: #ff862c; 
+  border: 2px solid #ebecf3;
+  box-shadow: inset 0 0 0 3px #ff862c,
+              inset 0 0 0 4px #f4bc96; 
+}
+
+.download{
+  padding: 1rem .7rem;
+  font-size: 1.4rem;
+  border-radius: 5px;
+  color: #67615b;
+  background-color: #ffffff;
+  border: 2px solid #c7c4c4;
+  box-shadow: inset 0 0 0 3px #ffffff,
+              inset 0 0 0 4px #e1e0e0;
+}
+
+/*------ style for circle decorate block ------*/
+
+.circle{
+  width: 7.8rem;
+  height: 7.8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.red,
+.overlie{
+  background-position: center;
   background-repeat: no-repeat;
 }
+
+.red{
+  background-color: #dd292b;
+}
+
+.overlie{
+  border: 1px solid #ffae61;
+  background-color: #ffffff;
+  position: absolute;
+  right: 46%;
+  box-shadow: -10px 0px 0px 0px #ffffff,
+              10px 0px 0px 0px #ffffff;
+}
+
+.tour-info .red {
+  background-image: url(../images/icons/tour_info/doc.png);
+}
+
+.company .red {
+  background-image: url(../images/icons/company/town.png);
+}
+
+.separate-block{
+  height: 8rem;
+  border: 1px solid green;
+  position: relative;
+}
+
+hr{
+  border-top: 1px solid #c6c6c6;
+  margin: 3.9rem 0;
+}
+
+/*-------------style for Header --------------*/
 
 .header-top,
 .header-center,
@@ -93,30 +170,14 @@ a:hover{
   color: #a8a8a9;
 }
 
+/*--------header top menu-----------*/
 
 .header-top{
   background: linear-gradient(to right, #505357 50%, #ffffff 50%);
 }
 
-.header-bottom{
-  background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
-}
-
-
-.container,
-.page{
-  border: 1px solid red;
-}
-
 .top-menu{
   background-color: #505357;
-}
-
-.langtoggle{
-  background-image: url(../images/engbg2.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right;
 }
 
 .soclink,
@@ -132,9 +193,14 @@ a:hover{
 .soclink{
   margin: 0 -15px 0 0;
   padding: 0;
-  justify-content: flex-end;
 }
 
+.soclink li>a{
+  display: block;
+  padding: 0 14px;
+  height: 100%;
+  width: 100%;
+}
 
 .soclink li{
   margin-right: 0; 
@@ -145,9 +211,16 @@ a:hover{
   border-left: 1px solid #a8a8a9;
 }
 
+.langtoggle{
+  background-image: url(../images/engbg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
+
+/*------------header center menu--------------*/
+
 .phone{
-  display: flex;
-  justify-content: flex-end;
   color: #45484a;
   font-weight: 500;
 }
@@ -159,10 +232,6 @@ a:hover{
 
 .phone .fa{
   font-size: 2rem;
-}
-
-.naigation{
-  padding: 1rem 0;
 }
 
 .phone li{
@@ -179,15 +248,33 @@ a:hover{
   padding: .6rem 0;
 }
 
-.logo{
-  justify-content: flex-start;
-}
-
 .logo a{
   display: block;
   height: 100%;
 }
 
+header .phone .fa,
+header .icon{
+  margin-right: .7rem;
+}
+
+
+/*------------header bottom menu-------------*/
+.header-bottom{
+  background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
+}
+
+.header-bottom nav{
+  padding-left: 3rem;
+  background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
+  background-image: url(../images/navbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.naigation{
+  padding: 1rem 0;
+}
 
 .naigation a,
 .naigation a:hover{
@@ -198,19 +285,16 @@ a:hover{
   text-decoration: none;
 }
 
-header .phone .fa,
-header .icon{
-  margin-right: .7rem;
-}
 
 .naigation li:nth-child(-n+4){
   margin-right: 1.2rem;
 }
 
-.logo-info{
-  justify-content: space-between;
+.logo-info span:first-child{
+  margin-right: 5.9rem;
 }
 
+/*-------------section main-----------------*/
 
 .main{
   background-image: url(../images/mainbg.png);
@@ -220,24 +304,15 @@ header .icon{
   color: #ffffff;
 }
 
-
 .main article{
-  flex-direction: column;
-  align-items: center;
   padding: 9rem 13.5rem 12.3rem 13.5rem;
 }
-
-.tour-info article{
-  align-items: center;
-}
-
 
 .main h1{
   font-size: 4.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 
 .main h3{
   font-weight: 500;
@@ -255,46 +330,9 @@ header .icon{
   font-weight: lighter;
 }
 
-
-/*------------styles for button---------------*/
-
-.btn-prime{
-  padding: 1.5rem 4.5rem;
-  border-radius: 3px;
-  color: #ffffff;
-  background-color: #ff862c;
-  border: 2px solid #ebecf3;
-  box-shadow: inset 0 0 0 3px #ff862c,
-              inset 0 0 0 4px #f4bc96; 
-  font-size: 1.9rem;
-  font-weight: 400;
-  text-align: center;
-  margin: auto;
-}
-
-/*--------------------------------------------*/
-
-.circle{
-  width: 7.8rem;
-  height: 7.8rem;
-  border-radius: 50%;
-  margin: 0 auto;
-  align-items: center;
-}
-
-.red{
-  background-color: #dd292b;
-}
-
-.overlie{
-  border: 1px solid #ffae61;
-  background-color: #ffffff;
-  position: relative;
-  top: 5.5rem;
-}
-
-.cercle img{
-  align-self: center;
+/*---------------section tour-info ----------------*/
+.tour-info {
+  border-bottom: 1px solid #df4b4a;
 }
 
 .tour-info article{
@@ -302,8 +340,6 @@ header .icon{
 }
 
 .tour_detail{
-  justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 6rem;
   font-family: "RobotoRegular";
 }
@@ -311,13 +347,18 @@ header .icon{
 .theme,
 .date,
 .places{
-  width: 30.5rem;
+  float: left;
+  width: 32%;
   min-height: 16rem;
   padding: 1.5rem .5rem 0 2rem;
   background-image: url(../images/tour_info_item_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid rgba(183, 216, 237, 0.81);
+}
+
+.date{
+  margin: 0 1.9rem 0 1.8rem;
 }
 
 .theme p,
@@ -350,12 +391,22 @@ header .icon{
   background-image: url(../images/icons/tour_info/building.png);
 }
 
-
 .tour-info button{
   margin-bottom: 5rem;
 }
 
-hr{
-  margin-bottom: 5rem;
+/*-------------------section company----------------*/
+
+.company{
+  box-shadow: inset 1px 220px 27px 0px #f6f2f1;
 }
+
+.brochure{
+  width: 36rem;
+  font-size: 1.4rem;
+  border: 1px solid #c7c4c4;
+}
+
+/*---------------slider------------------*/
+
 

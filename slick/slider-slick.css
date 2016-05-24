@@ -1,0 +1,49 @@
+
+#slidwrapper{
+  height: 36.5rem;
+  width: 44.7rem;
+  border: 1px solid red;
+  overflow: hidden;
+  position: absolute;
+}
+
+/*.slick-prev:before, 
+.slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #456;
+}
+*/
+
+#slider .slick-prev:before,
+#slider .slick-next:before{
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+
+  opacity: .75;
+  background-color: red;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#slider .slick-prev{
+  left: 25px;
+}
+
+#slider .slick-next{
+  right: 25px;
+}
+
+
+ul #slider{
+  display: inline-block;
+}
+
+#slider li{
+  height: 36.5rem;
+  width: 44.7rem;
+}

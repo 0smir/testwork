@@ -494,13 +494,26 @@ small{
   font-size: 1.4rem;
 }
 
-.subscription .separate-block img{
+.subscription .separate-block img,
+.tour-info .separate-block img,
+.partners .separate-block img{
   display: block;
   margin: 2rem auto;
 }
 
+
 .subscription .separate-block{
   margin-bottom: 1.5rem;
 }
+
+/*-------section partners-------*/
+.partner-list li{
+  margin-right: 2.7rem;
+}
+
+.partner-list li:last-child{
+  margin-right: 0;
+}
+
 
 

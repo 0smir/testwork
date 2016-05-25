@@ -177,7 +177,7 @@ hr{
 }
 
 .top-menu{
-  background-color: #505357;
+  background: linear-gradient(to right, #505357 90%, #ffffff 10%);
 }
 
 .soclink,

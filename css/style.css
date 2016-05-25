@@ -212,7 +212,7 @@ hr{
 }
 
 .langtoggle{
-  background-image: url(../images/engbg2.png);
+  background-image: url(../images/background/engbg2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -267,7 +267,7 @@ header .icon{
 .header-bottom nav{
   padding-left: 3rem;
   background: linear-gradient(to right, #ffffff 50%, #fdc84e 50%);
-  background-image: url(../images/navbg.png);
+  background-image: url(../images/background/navbg.png);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -297,7 +297,7 @@ header .icon{
 /*-------------section main-----------------*/
 
 .main{
-  background-image: url(../images/mainbg.png);
+  background-image: url(../images/background/mainbg.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -351,7 +351,7 @@ header .icon{
   width: 32%;
   min-height: 16rem;
   padding: 1.5rem .5rem 0 2rem;
-  background-image: url(../images/tour_info_item_bg.png);
+  background-image: url(../images/background/tour_info_item_bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   border: 1px solid rgba(183, 216, 237, 0.81);
@@ -506,6 +506,10 @@ small{
   margin-bottom: 1.5rem;
 }
 
+.subscription button{
+  margin-bottom: 6rem;
+}
+
 /*-------section partners-------*/
 .partner-list li{
   margin-right: 2.7rem;
@@ -514,6 +518,50 @@ small{
 .partner-list li:last-child{
   margin-right: 0;
 }
+  
+.partner-list{
+  margin-bottom: 5rem;
+}
+
+/*-----------footer------------*/
+footer{
+  min-height: 4rem;
+  padding-top: 1rem;
+  background-color: #7c7570;
+  background-image: url(../images/background/worldbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mini-nav li{
+  margin: -0.5rem 1.8rem 0 0;
+  list-style: none;
+  font-size: 1.2rem;  
+}
+
+.mini-nav li>a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.mini-nav li>a:hover{
+  color: #a29c98;
+  text-decoration: none;
+}
+
+.mini-nav{
+  border-right: 1px solid #a29c98;
+}
+
+.mini-nav:last-child{
+  border-right: 1px solid transparent;
+}
+
+.mini-nav:last-child li{
+  margin: -0.5rem 0 0 1.8rem;
+}
+
+
 
 
 

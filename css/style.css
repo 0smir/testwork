@@ -450,22 +450,23 @@ header .icon{
 
 
 /*-------------form------------*/
-form{
+#tour-registration{
   padding-left: 20%;
   margin-bottom: 3.5rem;
 }
 
-label{
+#tour-registration label{
   display: block;
   font-size: 1.4rem;
+
 }
 
-label,
+#tour-registration label
 .subscription p{
   color: #272728;
 }
 
-input{
+#tour-registration input{
   width: 90%;
   margin-bottom: 1.5rem;
   border: 1px solid #9d9b9a;
@@ -526,7 +527,8 @@ small{
 /*-----------footer------------*/
 footer{
   min-height: 4rem;
-  padding-top: 1rem;
+  line-height: 2.2rem;
+  color: #ffffff;
   background-color: #7c7570;
   background-image: url(../images/background/worldbg.png);
   background-repeat: no-repeat;
@@ -534,7 +536,7 @@ footer{
 }
 
 .mini-nav li{
-  margin: -0.5rem 1.8rem 0 0;
+  margin: -0.3rem 1.8rem -0.3rem 0;
   list-style: none;
   font-size: 1.2rem;  
 }
@@ -558,10 +560,68 @@ footer{
 }
 
 .mini-nav:last-child li{
-  margin: -0.5rem 0 0 1.8rem;
+  margin: -0.3rem 0 -0.3rem 1.8rem;
+}
+
+/*-----------footer form-----------*/
+#news-subscription{
+  display: block;
+ /* margin: 0 auto;
+  float: right;*/
+}
+
+#news-subscription > h3{
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#news-subscription input,
+#news-subscription button{
+  display: block;
+  width: 100%;
+}
+
+#news-subscription input{
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ffffff;
+  padding: 0 0 0 .5rem; 
 }
 
 
+
+#news-subscription button{
+  background-color: #5a5653;
+  border: 1px solid #ffffff;
+  text-transform: uppercase;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  margin: 0.5rem 0 2.5rem 0;
+}
+
+#news-subscription input::-webkit-input-placeholder{
+  color: #ffffff;
+}
+
+#news-subscription input::-moz-placeholder{
+  color: rgba(255, 255, 255, 1);
+}
+
+#news-subscription input:-moz-placeholder{
+  color: #ffffff;
+}
+
+#news-subscription input:-ms-input-placeholder{
+  color: #ffffff;
+}
+
+#news-subscription h3{
+  margin:  .5rem 0 .5rem 0;
+}
+
+.form-wrapper{
+  width: 170px;
+}
 
 
 

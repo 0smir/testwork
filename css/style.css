@@ -53,7 +53,7 @@ body {
 }
 
 .container{
-  width: 960px;
+  width: 990px;
 }
 
 ul{
@@ -180,34 +180,33 @@ hr{
   background: linear-gradient(to right, #505357 90%, #ffffff 10%);
 }
 
-.soclink,
+header .soclink,
 .mailto,
-.language,
-.soclink{
+.language{
   font-size: 1.1rem;
   font-weight: 400;
   color: #a8a8a9;
   text-decoration: none;
 }
 
-.soclink{
+header .soclink{
   margin: 0 -15px 0 0;
   padding: 0;
 }
 
-.soclink li>a{
+header .soclink li>a{
   display: block;
   padding: 0 14px;
   height: 100%;
   width: 100%;
 }
 
-.soclink li{
+header .soclink li{
   margin-right: 0; 
   border-right: 1px solid #a8a8a9;
 }
 
-.soclink li:first-child{
+header .soclink li:first-child{
   border-left: 1px solid #a8a8a9;
 }
 
@@ -525,7 +524,9 @@ small{
 }
 
 /*-----------footer------------*/
-footer{
+
+
+.footer-top-section{
   min-height: 4rem;
   line-height: 2.2rem;
   color: #ffffff;
@@ -533,6 +534,12 @@ footer{
   background-image: url(../images/background/worldbg.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+
+.footer-menu img{
+  margin: 2rem 0 1.5rem 0;
+
 }
 
 .mini-nav li{
@@ -566,8 +573,6 @@ footer{
 /*-----------footer form-----------*/
 #news-subscription{
   display: block;
- /* margin: 0 auto;
-  float: right;*/
 }
 
 #news-subscription > h3{
@@ -588,15 +593,13 @@ footer{
   padding: 0 0 0 .5rem; 
 }
 
-
-
 #news-subscription button{
   background-color: #5a5653;
   border: 1px solid #ffffff;
   text-transform: uppercase;
   font-size: 1rem;
   line-height: 1.8rem;
-  margin: 0.5rem 0 2.5rem 0;
+  margin: 0.8rem 0 2.5rem 0;
 }
 
 #news-subscription input::-webkit-input-placeholder{
@@ -615,25 +618,29 @@ footer{
   color: #ffffff;
 }
 
-#news-subscription h3{
-  margin:  .5rem 0 .5rem 0;
-}
-
 .form-wrapper{
-  width: 170px;
+  width: 172px;
+  margin: 0 auto;
 }
 
 /*------------location-----------*/
+
+.location{
+  margin-left: 4rem;
+}
+
 .location h3{
   width: 100%;
   font-size: 1.2rem;
+  font-weight: bold;
 }
 
 .location ul{
-  width: 47%;
+  width: 48%;
   display: block;
   padding:0;
   list-style: none;
+  font-size: 1.2rem;
 }
 
 .location-ru li,
@@ -682,5 +689,18 @@ footer{
   left: -3rem;
   top: .3rem;
 }
+
+/*---------footer-bottom-section----------*/
+
+.footer-bottom-section{
+
+  color: #6d6d6d;
+}
+
+.copyright p:first-of-type{
+  margin-right: 11.5rem;
+}
+
+
 
 

@@ -623,5 +623,64 @@ footer{
   width: 170px;
 }
 
+/*------------location-----------*/
+.location h3{
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.location ul{
+  width: 47%;
+  display: block;
+  padding:0;
+  list-style: none;
+}
+
+.location-ru li,
+.location-ua li{
+  position: relative;
+}
+
+.location-ru li{
+  margin: 0 2rem .5rem 2rem;
+}
+
+.location-ua li{
+  margin: 0 0 .5rem 2rem;
+}
+
+.location-ru li:first-of-type::before,
+.location-ua li:first-of-type::before{
+  content: ' ';
+  display: inline-block;
+  padding: 1rem;
+  background-image: url("../images/footernav/phoneicon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -3rem;
+}
+
+.location-ru li:nth-of-type(2)::before,
+.location-ua li:nth-of-type(2)::before{
+  content: ' ';
+  display: inline-block;
+  padding: 1.3rem;
+  background-image: url("../images/footernav/locationicon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -3rem;
+  top: .5rem;
+}
+
+.location-ua li:last-of-type::before{
+  content: ' ';
+  display: inline-block;
+  padding: 1.3rem;
+  background-image: url("../images/footernav/mailicon.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: -3rem;
+  top: .3rem;
+}
 
 

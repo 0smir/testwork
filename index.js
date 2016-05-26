@@ -5,8 +5,12 @@ $(document).ready(function(){
 	    dots: false,
 	    infinite: true,
 	  	speed: 300,
-	  	slidesToShow: 1,
+	  	slidesToShow: 2,
 	  	arrows: true
+	});
+
+	$(function () {
+	  $('[data-toggle="tooltip"]').tooltip()
 	});
 
 });

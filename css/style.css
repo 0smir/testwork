@@ -42,6 +42,70 @@
 }
 
 
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProItalic"; */
+@font-face {
+    font-family: "MyriadProItalic";
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot");
+    src: url("../fonts/MyriadProItalic/MyriadProItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.woff") format("woff"),
+    url("../fonts/MyriadProItalic/MyriadProItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBold"; */
+@font-face {
+    font-family: "MyriadProSemiBold";
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot");
+    src: url("../fonts/MyriadProSemiBold/MyriadProSemiBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.woff") format("woff"),
+    url("../fonts/MyriadProSemiBold/MyriadProSemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBoldItalic"; */
+@font-face {
+    font-family: "MyriadProBoldItalic";
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot");
+    src: url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProBoldItalic/MyriadProBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProSemiBoldItalic"; */
+@font-face {
+    font-family: "MyriadProSemiBoldItalic";
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot");
+    src: url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.woff") format("woff"),
+    url("../fonts/MyriadProSemiBoldItalic/MyriadProSemiBoldItalic.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/*=------------------------------=*/
+
+
 *{
   box-sizing: border-box;
 }
@@ -49,7 +113,7 @@
 body {
   font-size: 10px;
   line-height: 2.8rem;  
-  font-family: "RobotoRegular", sans-serif;
+  font-family: "MyriadProRegular", sans-serif;
 }
 
 .container{
@@ -67,10 +131,18 @@ a{
 a:hover{
   color: #e2e2e3;
 }
-  
-h2 + p,
-.reviews > p{
+
+h2 + p{
+  font-family: "MyriadProRegular", sans-serif;
   font-size: 1.9rem;
+  line-height: 2.2rem;
+}
+
+  
+.reviews > p{
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: 1.9rem;
+  line-height: 2.2rem;
 }
 
 .attention{
@@ -142,16 +214,18 @@ h2 + p,
 }
 
 .tour-info .red {
+  margin-top: 6rem;
   background-image: url(../images/icons/tour_info/doc.png);
 }
 
 .company .red {
+  margin-top: 12rem;
   background-image: url(../images/icons/company/town.png);
 }
 
 .separate-block{
   height: 8rem;
-  border: 1px solid green;
+  border: 1px solid transparent;
   position: relative;
 }
 
@@ -325,7 +399,7 @@ header .icon{
 .main p{
   font-size: 2.2rem;
   padding-bottom: 4rem;
-  font-family: "RobotoRegular";
+  font-family: "MyriadProRegular";
   font-weight: lighter;
 }
 
@@ -338,9 +412,19 @@ header .icon{
   padding-top: 5rem;
 }
 
-.tour_detail{
+/*.tour-info .red{
+  margin-top: 6rem;
+}*/
+
+.tour-info h2{
+  color: #df4444;
+}
+
+.tour-detail{
   margin-bottom: 6rem;
-  font-family: "RobotoRegular";
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
 }
 
 .theme,
@@ -358,6 +442,10 @@ header .icon{
 
 .date{
   margin: 0 1.9rem 0 1.8rem;
+}
+
+.date  span{
+  color: #dd292b;
 }
 
 .theme p,
@@ -409,7 +497,7 @@ header .icon{
 /*---------------slider------------------*/
 
 #slider{
-  margin-bottom: 6.5rem;
+  margin: 4rem auto 6.5rem ;
 }
 .reviews-item{
  margin: 0 3rem;
@@ -423,6 +511,9 @@ header .icon{
   background-color: #ffcf5f;
   border-radius: 3px;
   border: 1px solid #ffcf5f;
+  font-family: "MyriadProRegular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
   position: relative;
   overflow: visible;
 }
@@ -529,6 +620,7 @@ small{
 .footer-top-section{
   min-height: 4rem;
   line-height: 2.2rem;
+  font-family: "MyriadProRegular", sans-serif;
   color: #ffffff;
   background-color: #7c7570;
   background-image: url(../images/background/worldbg.png);
@@ -693,14 +785,23 @@ small{
 /*---------footer-bottom-section----------*/
 
 .footer-bottom-section{
-
+  font-size: 1.2rem;
+  line-height: 2.2rem;
   color: #6d6d6d;
+  padding-bottom: 3rem;
 }
+
+
 
 .copyright p:first-of-type{
-  margin-right: 11.5rem;
+  margin-right: 7rem;
 }
 
+.copyright p:last-of-type{
+  width: 70%;
+}
 
-
+.footer-bottom-section .soclink li:nth-child(-n+2){
+  margin-right: 15px;
+}
 
